@@ -1,0 +1,6 @@
+pytest==3.4.1
+pytest-cov==2.5.1
+pylint==1.7.6
+xenon==0.5.4
+pydocstyle==2.1.1
+pycodestyle==2.3.1

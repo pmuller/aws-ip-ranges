@@ -1,0 +1,11 @@
+*.pyc
+.eggs/
+*.egg-info
+.cache
+.env
+dist/
+.coverage
+htmlcov/
+coverage.xml
+junit.xml
+.pytest_cache/
