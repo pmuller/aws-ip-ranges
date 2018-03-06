@@ -7,5 +7,5 @@ python:
 script:
   - make ci_check
 after_success:
-  - pip install python-coveralls
-  - coveralls
+  - pip install codecov
+  - codecov
