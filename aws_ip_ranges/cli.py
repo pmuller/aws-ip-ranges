@@ -13,6 +13,9 @@ def parse_arguments(argv):
     """
     parser = ArgumentParser()
 
+    parser.add_argument(
+        '-k', '--yaml-key', default='aws::prefixes',
+        help='Top-level key in generated YAML document. Default: %(default)s')
     source_group = parser.add_mutually_exclusive_group()
     source_group.add_argument(
         '-f', '--ip-ranges-file', metavar='PATH',
@@ -41,7 +44,8 @@ def main(argv=None, command=None):
 
     json_data = json.loads(str_data)
     prefixes = data.transform(json_data)
-    yaml_str = output.generate(prefixes, json_data['createDate'], command)
+    yaml_str = output.generate(
+        prefixes, json_data['createDate'], arguments.yaml_key, command)
 
     if arguments.output_file:
         with open(arguments.output_file, 'w') as fileobj:

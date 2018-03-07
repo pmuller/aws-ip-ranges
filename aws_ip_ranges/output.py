@@ -39,14 +39,14 @@ class Dumper(yaml.Dumper):  # pylint: disable=too-many-ancestors
         return self.represent_mapping('defaultdict', dict_)
 
 
-def generate(prefixes, creation_date, command=None):
+def generate(prefixes, creation_date, top_level_key, command=None):
     """Generate the YAML document.
     """
     yaml_str = TEMPLATE.format(
         command=command or ' '.join([basename(sys.argv[0])] + sys.argv[1:]),
         creation_date=creation_date)
     yaml_str += yaml.dump(
-        {'aws::prefixes': prefixes},
+        {top_level_key: prefixes},
         indent=2, width=80, default_flow_style=False, Dumper=Dumper)
 
     return yaml_str
