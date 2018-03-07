@@ -1,6 +1,15 @@
 Changelog
 =========
 
+1.1.1
+-----
+
+Bug fix
++++++++
+
+* Add usage information to ``README``
+* Fix automatic deployment of tagged releases to PyPI
+
 1.1.0
 -----
 
