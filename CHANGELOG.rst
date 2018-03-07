@@ -1,6 +1,11 @@
 Changelog
 =========
 
+1.1.2
+-----
+
+* Fix redundant PyPI upload on Travis
+
 1.1.1
 -----
 
