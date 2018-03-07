@@ -11,7 +11,7 @@ after_success:
   - codecov
 deploy:
   provider: pypi
-  distributions: sdist bdist_wheel
+  distributions: sdist
   user: pmuller
   password:
     secure: "KhruMtR3hzx4EZXp6+s/Pb+bFS8Z4klfm4fcHNelQQ6pcU6tkV6qJgK1hbcgSwnDTwYsYqzhUgnAMlhCYbqbCtHuRVPhv04E5/iJySMoNFiYqAm5lzOcu9s6FPIjw7B+GERp40eitrgqmE7Oc8YsOXcCJP//Bgt994HNl2brm2NtrwynrsqmO6WS32tDoViIhSHIdT1TuoKNa1eQl+ZE41SPLH1nf1Hgh1AdGVgAgux4Zk2H+KO6r3p/1p1fGfkRwar2DCtV/ZyTFUbRzeN0gubAqxsPfxKwz4Kk0c+iDrKsgWmUxfsUHmJ38lwwkSDFGKkZL+Qk3dJCIw3t1vHaUIdl8bCUctBmNukuUM2yFjlS0nj7ZetI5JSN4McJXY1HsWCpveomj1Wvu5CMzn7Xlnck8re81N3fr7NLFWZIURwYoWIJYm3uCAtmu/+hmhV3DdR3QGczrAjl/5+2OcDC24qeR1og91A6nzuIWWlTDoY+5PlGZCSnOl0TyBzhPntAeTX+Tj4jv0mdJ08+aNHG280oOdeX/sChr75Br0SmwtGjW678Qgaa9bNhJfItAaqM3FmDfOv38gn/LQQx6ixnfzwLYoSa0VgsojHjbf0n4ERRTmCJtIcYNXDVdva+JHXeGMLbLN8BZ+5VFOjY3DuCL0z/bpBj/Ze7M3lm0zBeO6Y="
